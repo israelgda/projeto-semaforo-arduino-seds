@@ -40,55 +40,55 @@ void loop() {
         digitalWrite(ledVerdeTA, HIGH);
         activeTB = false;
         activeTA = true;
-        delay(3000);
+        delay(10000);
       } else {
         digitalWrite(ledVerdeTB, LOW);
         digitalWrite(ledAmareloTB, HIGH);
-        delay(1000);
+        delay(5000);
         digitalWrite(ledAmareloTB, LOW);
         digitalWrite(ledVermelhoTB, HIGH);
         digitalWrite(ledVerdeTA, HIGH);
         digitalWrite(ledVermelhoTA, LOW);
-        delay(3000);
+        delay(10000);
       }
       break;
     case 2:
       if(digitalRead(ledVerdeTB) == 1){
         digitalWrite(ledVermelhoTA, HIGH);
         digitalWrite(ledVerdeTB, HIGH);
-        delay(3000);
+        delay(10000);
       } else {
         digitalWrite(ledVerdeTA, LOW);
         digitalWrite(ledAmareloTA, HIGH);
-        delay(1000);
+        delay(5000);
         digitalWrite(ledAmareloTA, LOW);
         digitalWrite(ledVermelhoTA, HIGH);
         digitalWrite(ledVerdeTB, HIGH);
         digitalWrite(ledVermelhoTB, LOW);
-        delay(3000);
+        delay(10000);
       }
       break;
     case 3:
       if(digitalRead(ledVerdeTA) == 1 || inicial == 1){
         digitalWrite(ledVerdeTA, LOW);
         digitalWrite(ledAmareloTA, HIGH);
-        delay(1000);
+        delay(5000);
         digitalWrite(ledAmareloTA, LOW);
         digitalWrite(ledVermelhoTA, HIGH);
         digitalWrite(ledVerdeTB, HIGH);
         digitalWrite(ledVermelhoTB, LOW);
-        delay(3000);
+        delay(10000);
         inicial = 0;
       }
       if(digitalRead(ledVerdeTB) == 1){
         digitalWrite(ledVerdeTB, LOW);
         digitalWrite(ledAmareloTB, HIGH);
-        delay(1000);
+        delay(5000);
         digitalWrite(ledAmareloTB, LOW);
         digitalWrite(ledVermelhoTB, HIGH);
         digitalWrite(ledVerdeTA, HIGH);
         digitalWrite(ledVermelhoTA, LOW);
-        delay(3000);
+        delay(10000);
       }
   }
 }
